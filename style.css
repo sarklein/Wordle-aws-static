@@ -1,0 +1,73 @@
+.cell {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border: 2px solid black;
+  margin: 2px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.row {
+    display: flex;
+}
+
+
+html,body,input,select {
+  font-size: 17px; 
+  padding: 4px; 
+  margin-bottom:4px;}
+
+label{
+  padding-right:8px}
+
+.correct{
+  background-color: yellow;
+}
+
+.wrong-place{
+  background-color: pink;
+}
+
+.not-in-word{
+  background-color: blueviolet;
+}
+	
+.key-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.perKey {
+  width: 35px;
+  height: 45px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px solid black;
+
+}
+
+.categories {
+font-size: 20px;
+margin: 3px;
+}
+
+@media (max-width: 600px) {
+  .cell {
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    line-height: 50px;
+  }
+
+  .perKey {
+    width: 24px;
+    height: 32px;
+    font-size: 14px;
+  }
+}
+

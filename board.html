@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Wordle</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <h1>Wordle</h1>
+ 
+<div class="categories">
+  <p class="correct">Correct</p>
+  <p class="wrong-place">Wrong Place</p>
+  <p class="not-in-word">Not in Word</p>
+</div>
+
+  
+  <div id="board"></div>
+
+<div id="Keyboard"></div>
+
+  <form>
+
+    <label>Guess a Word:</label><input type = 'text' id = 'word' value = ''><br />
+    <input type = 'button' value= 'Submit' id='submit'>
+
+    <input type = 'button' value= 'Restart' id='restart' style="display: none;">
+  </form>
+
+<script src="board.js"></script>
+
+</body>
+</html>
