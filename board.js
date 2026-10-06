@@ -93,18 +93,6 @@ function letterUse(word, answer) {
   return letterUpdate; 
 }
 
-// checks with the dictionary API whether a word is real... EXTRA CREDIT
-function Wordcheck(word) {
-  return fetch("https://api.dictionaryapi.dev/api/v2/entries/en/" + word)
-    .then(response => {
-    console.log("status 200 or 404:", response.status);
-    return response.ok;
-    })
-    .catch(error => {
-      console.log("API error", error);
-      return true;
-    });
-}
 
 document.getElementById("submit").onclick = function() {
   var word = document.getElementById("word").value.toLowerCase();
@@ -114,12 +102,6 @@ document.getElementById("submit").onclick = function() {
     return;
   }
 
-  //Function that relies on the API call result in .then() callback to check if word is valid or not
-  Wordcheck(word).then(function(valid) {
-    if (!valid) {
-      alert("Error, '" + word + "' is not a valid word, try again please");
-      return;
-    }
 
     var message = "";
     var letterUpdate = letterUse(word, answer); 
@@ -174,7 +156,7 @@ document.getElementById("submit").onclick = function() {
       alert("Game Over- the correct word is: " + answer);
       document.getElementById("restart").style.display = "inline-block";
     }
-  }); 
+  
 };
 
 document.getElementById("restart").onclick = function() {
