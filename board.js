@@ -1,6 +1,6 @@
 var wordArr = ["poops", "rocks", "juice", "roses", "child", "chick", "lists", "chips",
   "wrist", "chase", "whips", "shoes", "sorry", "prowl", "piece", "chess", "moose", "loose",
-  "stick", "video", "spool", "cereal", "grade", "stars", "viper", "snake", "light",
+  "stick", "video", "spool", "snaps", "grade", "stars", "viper", "snake", "light",
   "penny", "hands", "shark"];
 
 // arrow function: picks a random word from wordArr and lowercases it.
